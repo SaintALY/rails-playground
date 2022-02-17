@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @topten.name %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @topten.comment %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @topten.address %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @topten.stars %>
+</p>
+
+<%= link_to 'Edit', edit_topten_path(@topten) %> |
+<%= link_to 'Back', toptens_path %>
