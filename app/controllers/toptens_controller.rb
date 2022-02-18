@@ -21,8 +21,8 @@ class ToptensController < ApplicationController
     
     # html_file = URI.open(url).read
     # @html_doc = Nokogiri::HTML(html_file)
-    username = "liobaer"
-    user_id = "237266180"
+    username = ""
+    user_id = ""
     # url = URI("https://instagram47.p.rapidapi.com/get_user_id?username=#{username}")
     # url = URI("https://instagram47.p.rapidapi.com/user_followers?userid=#{user_id}")
     url = URI("https://instagram47.p.rapidapi.com/email_and_details?userid=#{user_id}")
