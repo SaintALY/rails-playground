@@ -1,0 +1,9 @@
+<h1>Rails Wiki NEW</h2>
+
+<%= @railswiki %>
+
+<%= form_for(@railswiki) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.button :submit %>
+<% end %>

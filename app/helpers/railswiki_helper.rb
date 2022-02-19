@@ -1,0 +1,2 @@
+module RailswikiHelper
+end
