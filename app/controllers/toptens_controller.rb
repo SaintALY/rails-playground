@@ -16,26 +16,26 @@ class ToptensController < ApplicationController
     # movie_serialized = URI.open(url).read
     # @movies = JSON.parse(movie_serialized)
 
-    # url = "https://www.claudia-maechtle.de/"
-    # url = "https://www.google.de/maps/place/U+Heinrich-Heine-Stra%C3%9Fe/@52.5086709,13.4131792,15z/data=!4m5!3m4!1s0x47a84e25398bf107:0xa04b3e09a0d4d96a!8m2!3d52.510858!4d13.4163621"
+    url = "https://goo.gl/maps/Kdnv7bcw78Tye71XA"
     
-    # html_file = URI.open(url).read
-    # @html_doc = Nokogiri::HTML(html_file)
-    username = ""
-    user_id = ""
+    html_file = URI.open(url).read
+    @html_doc = Nokogiri::HTML(html_file)
+
+    # username = ""
+    # user_id = ""
     # url = URI("https://instagram47.p.rapidapi.com/get_user_id?username=#{username}")
     # url = URI("https://instagram47.p.rapidapi.com/user_followers?userid=#{user_id}")
-    url = URI("https://instagram47.p.rapidapi.com/email_and_details?userid=#{user_id}")
+    # url = URI("https://instagram47.p.rapidapi.com/email_and_details?userid=#{user_id}")
 
-    http = Net::HTTP.new(url.host, url.port)
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    # http = Net::HTTP.new(url.host, url.port)
+    # http.use_ssl = true
+    # http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
-    request = Net::HTTP::Get.new(url)
-    request["x-rapidapi-host"] = 'instagram47.p.rapidapi.com'
-    request["x-rapidapi-key"] = '0363c85d04msh3370cfb927787c3p1afecdjsn2b8cab3ddff8'
+    # request = Net::HTTP::Get.new(url)
+    # request["x-rapidapi-host"] = 'instagram47.p.rapidapi.com'
+    # request["x-rapidapi-key"] = '0363c85d04msh3370cfb927787c3p1afecdjsn2b8cab3ddff8'
 
-    @insta = http.request(request)
+    # @insta = http.request(request)
   end
 
   # GET /toptens/1

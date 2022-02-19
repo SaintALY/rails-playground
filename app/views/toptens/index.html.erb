@@ -28,10 +28,10 @@
   </tbody>
 </table>
 
-<%= @insta.read_body %>
-<%# <% @insta.read_body.each do |element| %>
-  <%# <%= element %> %>
-<%# <% end %> %> %>
+<% @html_doc.search("div").each do |element| %>
+  <%= element %>
+<% end %>
+
 <br>
 
 <%= link_to 'New Topten', new_topten_path %>
